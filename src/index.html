@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Cartas Nay</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,45 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div id="general">
+        <div id="right">
+            <div class="dos">
+                <table id="card">
+                    <tr>
+                        <td class="tdpinta"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="tdnum"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="tdpinta"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="left">
+            <div id="form">
+                <div class="button">
+                <button id="generate">Nueva Carta</button></br>
+                ____________________________</br></br>
+                </div>
+            <div>
+            <form>
+                <input type="text" id="height" value="alto"></br>
+                <input type="text" id="width" value="ancho"></br></br></br>
+                <button id="aplicar">aplicar</button>
+            </form>
+        </div>
     </div>
+        <p>
+          Made with ❤️ by
+        </p>
+    <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>
