@@ -50,11 +50,3 @@ button.addEventListener("click", function() {
   aleatoria();
 });
 setTimeout(aleatoria, 10000);
-//cambiar atributos de la carta
-let height = document.querySelector("#height");
-let width = document.querySelector("#width");
-aplicar.addEventListener("click", function() {
-  height.style.height = height.value;
-  width.style.width = width.value;
-  alert("Tamaño Modificado" + height.value + "x" + width.value);
-});
